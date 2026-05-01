@@ -1,0 +1,19 @@
+Date,Product,Category,Units_Sold,Price,Cost,Location,Revenue,Total_Cost,Profit,Month
+2024-01-05,Hoodie,Apparel,15,45,24,Logan,675,360,315,January
+2024-01-12,T-Shirt,Apparel,30,22,10,Logan,660,300,360,January
+2024-01-20,Hat,Accessories,22,18,7,Ogden,396,154,242,January
+2024-02-03,Hoodie,Apparel,18,45,24,Salt Lake City,810,432,378,February
+2024-02-14,Backpack,Accessories,10,60,35,Logan,600,350,250,February
+2024-02-25,T-Shirt,Apparel,27,22,10,Ogden,594,270,324,February
+2024-03-02,Hat,Accessories,25,18,7,Logan,450,175,275,March
+2024-03-15,Hoodie,Apparel,21,45,24,Salt Lake City,945,504,441,March
+2024-03-28,Backpack,Accessories,14,60,35,Ogden,840,490,350,March
+2024-04-06,T-Shirt,Apparel,35,22,10,Logan,770,350,420,April
+2024-04-17,Hat,Accessories,28,18,7,Salt Lake City,504,196,308,April
+2024-04-29,Hoodie,Apparel,24,45,24,Logan,1080,576,504,April
+2024-05-08,Backpack,Accessories,17,60,35,Ogden,1020,595,425,May
+2024-05-19,T-Shirt,Apparel,32,22,10,Salt Lake City,704,320,384,May
+2024-05-30,Hat,Accessories,30,18,7,Logan,540,210,330,May
+2024-06-04,Hoodie,Apparel,26,45,24,Ogden,1170,624,546,June
+2024-06-16,Backpack,Accessories,20,60,35,Logan,1200,700,500,June
+2024-06-27,T-Shirt,Apparel,38,22,10,Salt Lake City,836,380,456,June
