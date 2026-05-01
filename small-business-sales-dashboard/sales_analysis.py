@@ -3,8 +3,13 @@ import matplotlib.pyplot as plt
 import os
 
 # Create folders if they do not already exist
-os.makedirs("data", exist_ok=True)
-os.makedirs("visuals", exist_ok=True)
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+data_path = os.path.join(base_dir, "data")
+visuals_path = os.path.join(base_dir, "visuals")
+
+os.makedirs(data_path, exist_ok=True)
+os.makedirs(visuals_path, exist_ok=True)
 
 # -----------------------------
 # Step 1: Create sample sales data
@@ -81,7 +86,7 @@ df["Profit"] = df["Revenue"] - df["Total_Cost"]
 df["Month"] = df["Date"].dt.strftime("%B")
 
 # Save the dataset
-df.to_csv("data/sales_data.csv", index=False)
+df.to_csv(os.path.join(data_path, "sales_data.csv"), index=False)
 
 # -----------------------------
 # Step 2: Basic analysis
@@ -115,7 +120,7 @@ plt.title("Revenue by Month")
 plt.xlabel("Month")
 plt.ylabel("Revenue")
 plt.tight_layout()
-plt.savefig("visuals/revenue_by_month.png")
+plt.savefig(os.path.join(visuals_path, "revenue_by_month.png"))
 plt.close()
 
 # Revenue by product
@@ -127,7 +132,7 @@ plt.title("Revenue by Product")
 plt.xlabel("Product")
 plt.ylabel("Revenue")
 plt.tight_layout()
-plt.savefig("visuals/revenue_by_product.png")
+plt.savefig(os.path.join(visuals_path, "revenue_by_product.png"))
 plt.close()
 
 # Profit by category
@@ -139,7 +144,7 @@ plt.title("Profit by Category")
 plt.xlabel("Category")
 plt.ylabel("Profit")
 plt.tight_layout()
-plt.savefig("visuals/profit_by_category.png")
+plt.savefig(os.path.join(visuals_path, "profit_by_category.png"))
 plt.close()
 
 # Revenue by location
@@ -151,7 +156,7 @@ plt.title("Revenue by Location")
 plt.xlabel("Location")
 plt.ylabel("Revenue")
 plt.tight_layout()
-plt.savefig("visuals/revenue_by_location.png")
+plt.savefig(os.path.join(visuals_path, "revenue_by_location.png"))
 plt.close()
 
 print("\nCharts saved in the visuals folder.")
